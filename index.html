@@ -11,48 +11,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
   <body>
-
     <h1 class="text-center">Daddy's Sunday Wordle</h1>
 
     <hr />
-
-    <div class="row">
-        <button class="btn-primary" id="newGameBtn">New Game</button>
+    <div class="container">
+        <div class="row">
+            <button class="btn btn-primary" id="newGameBtn">New Game</button>
+        </div>
+        
+        <input type="text" disabled="disabled"  />
+        <label id="values">label content</label> 
+        <h3>right letter, right place</h3>
+        <div id="rightplace"></div>
+        <h3>right letter, wrong place</h3>
+        <div id="wrongplace"></div>
+        <div id="guesses"></div>
+        
+        
     </div>
-
-    <input type="text" disabled="disabled"  />
-
     <!-- <div class="row" >
         <div class="col-1"></div>
-        <div class="col-2 entrybox">
-            <input type="text" maxlength="1" value="S" class="letterEntryBox" />
-        </div>
-        <div class="col-2 entrybox">
-            <input type="text" maxlength="1" value="" class="letterEntryBox" />
-        </div>
-        <div class="col-2 entrybox">
-            <input type="text" maxlength="1" value="" class="letterEntryBox" />
-        </div>
-        <div class="col-2 entrybox">
-            <input type="text" maxlength="1" value="" class="letterEntryBox" />
-        </div>
-        <div class="col-2 entrybox">
-            <input type="text" maxlength="1" value="" class="letterEntryBox" />
-        </div>
+        <div class="col-2 entrybox rightplace">S</div>
+        <div class="col-2 entrybox">I</div>
+        <div class="col-2 entrybox rightletter">M</div>
+        <div class="col-2 entrybox">P</div>
+        <div class="col-2 entrybox">L</div>
         <div class="col-1"></div>
-    </div> --> 
-    <label id="values">label content</label> 
-    <h3>right letter, right place</h3>
-    <div id="rightplace"></div>
-    <h3>right letter, wrong place</h3>
-    <div id="wrongplace"></div>
-    <div id="guesses"></div>
+    </div>  -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="src/js/wordle.js"></script>
+    <script src="src/js/guess.js"></script>
+    <script src="src/js/Letter.js"></script>
+    <script src="src/js/LetterType.js"></script>
   </body>
 </html>
 

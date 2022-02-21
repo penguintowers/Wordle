@@ -1,5 +1,9 @@
-const wordleLength : Number = 5;
+import {Guess} from './guess';
 
+class Wordle {
+    constructor() {
+    }
+    const wordleLength : Number = 5;
 const wordleOptions = ['SMILE', 'FLOUR', 'CHIPS' ]
 let currentWordle: string;
 
@@ -44,7 +48,10 @@ function updateValue(e : InputEvent) {
         guesses.push(currentGuess.join(''));
         displayLists();
 
-        displayGuesses();
+        let g = new Guess(currentGuess,currentWordle);
+        g.DisplayGuess();
+
+        // displayGuesses();
     }
     else if(e.inputType ==="deleteContentBackward") {
         currentGuess.pop();
@@ -94,4 +101,6 @@ function displayGuesses(){
     let previousGuesses = guesses.map((element, index) => `<div class="row"><div class="col-12">${element}</div> </div>`);
 
     guessesElement!.innerHTML = previousGuesses.join(''); 
+}
+
 }

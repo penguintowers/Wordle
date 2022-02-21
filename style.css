@@ -8,15 +8,27 @@ hr {
 }
 
 .entrybox {
-    width:23vw; height:23vw;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width:23vw; 
+    height:23vw;
     margin:1vw 0;
-    background:gold;  
-    border: 3px solid green;
+    border: 3px solid black;
+    background-color: gray;
+    font-size: 2000%;
+    text-align: center;
+    line-height: 22vw;
+}
 
+.rightletter {
+    background:gold;  
+}
+
+.rightplace {
+    background:green;  
 }
 
 .letterEntryBox {
-    font-size: xx-large;
+    font-size: 2000%;
     line-height: 20vw;
     text-align: center;
     width: 100%;
